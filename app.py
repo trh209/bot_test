@@ -9,7 +9,7 @@ def respond():
     message = data.get("message", "")
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
     return jsonify({
-        "response": f"당신의 메시지: {message}"
+        "response": f"당신의 메시지: {message}",
         "time": now
     })
 
